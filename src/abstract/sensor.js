@@ -16,3 +16,4 @@ export default class Sensor {
         throw new Error("Implementa read()");
     }
 }
+ 
