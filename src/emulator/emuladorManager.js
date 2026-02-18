@@ -21,8 +21,8 @@ class EmulatorManager {
 
     start(interval) {
         if (this.timer) return;
+         console.log("::: Emulacion iniciada :::");
         this.timer = setInterval(async () => {
-            console.log("::: Emulacion iniciada :::");
             for (const s of this.sensors) {
                 const data = s.read();
                 await api.send(data);
