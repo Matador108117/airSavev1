@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeAir - Emulador IoT</title>
+
+    <!-- CSS (se respeta completamente) -->
+    <link rel="stylesheet" href="./src/ui/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>SafeAir - Emulador IoT</h1>
+
+    <div class="card">
+        <h2>Lectura de Variables</h2>
+        <div class="button-group">
+            <button id="iniciar" class="btn btn-start">Iniciar</button>
+            <button id="detener" class="btn btn-stop">Detener</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>⚙ Control del Sistema</h2>
+        <div class="button-group">
+            <button id="ventilacion" class="btn btn-control">Ventilación</button>
+            <button id="alerta" class="btn btn-alert">Alerta</button>
+        </div>
+    </div>
+
+</div>
+
+<script type="module" src="./src/controller.js"></script>
+
+</body>
+</html>
